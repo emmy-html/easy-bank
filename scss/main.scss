@@ -124,6 +124,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-weight: $light;
+}
+
 p {
   color: $gray-blue;
   line-height: 1.75rem;
@@ -189,7 +193,7 @@ p {
   position: relative;
   background: url('../img/bg-intro-mobile.svg') no-repeat;
   background-color: $light-gray;
-  background-position: bottom 350px right;
+  background-position: right 0px top -120px;
   background-size: 100%;
   z-index: -2;
 }
@@ -214,6 +218,11 @@ p {
 
 
 /* About */
+
+#about {
+  background: $light-gray-blue;
+  padding-top: 30px;
+}
 
 #about .content-wrapper {
   margin: 70px 30px;

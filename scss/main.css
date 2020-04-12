@@ -89,6 +89,9 @@ h1 {
   line-height: 3rem;
   text-align: center; }
 
+h2 {
+  font-weight: 300; }
+
 p {
   color: #9698a6;
   line-height: 1.75rem; }
@@ -144,7 +147,7 @@ p {
   position: relative;
   background: url("../img/bg-intro-mobile.svg") no-repeat;
   background-color: #fafafa;
-  background-position: bottom 350px right;
+  background-position: right 0px top -120px;
   background-size: 100%;
   z-index: -2; }
 
@@ -164,6 +167,10 @@ p {
     text-align: center; }
 
 /* About */
+#about {
+  background: #f3f4f6;
+  padding-top: 30px; }
+
 #about .content-wrapper {
   margin: 70px 30px; }
   #about .content-wrapper p {

@@ -112,7 +112,18 @@ $white: hsl(0, 0%, 100%);
 /* Main Styles */
 
 body {
+  font-family: $body-font;
   font-size: 18px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: $light;
+  text-align: center;
+}
+
+p {
+  color: $gray-blue;
 }
 
 /* Navigation */
@@ -123,22 +134,27 @@ body {
   float: left;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
+  position: relative;
   background-color: $white;
-  overflow: hidden;
+  height: 60px;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  background-color: $white;
   display: block;
+  float: left;
   color: $dark-blue;
-  font-family: $body-font;
   font-weight: $light;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.topnav .icon {
+  padding: 0;
+  margin: 14px 16px 0px 14px;
 }
 
 .topnav i {
@@ -153,6 +169,41 @@ body {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+
+/* Hero */
+#hero .content-wrapper {
+  position: relative;
+  background: url('../img/bg-intro-mobile.svg') no-repeat;
+  background-position: bottom 250px right;
+  background-size: 100%;
+  z-index: -2;
+}
+
+#hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  img {
+    z-index: -1;
+    margin-top: -155px;
+    width: 100%;
+  }
+  h1 {
+    line-height: 3rem;
+  }
+  p {
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+
+/* Blog */
+
+#blog img {
+  width: 20%;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -170,7 +221,6 @@ body {
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: fixed;
-    margin-top: -25px;
     padding: 0;
     width: 100%;
   }

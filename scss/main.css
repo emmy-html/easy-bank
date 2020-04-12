@@ -78,6 +78,9 @@ textarea {
   padding: 0.2em 0; }
 
 /* Main Styles */
+header .request-invite {
+  display: none; }
+
 /* Fonts & Colors */
 /* ==========================================================================
    Helper classes

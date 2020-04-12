@@ -293,8 +293,9 @@ p {
 /* Footer */
 
 footer { 
+  background: $dark-blue;
   .content-wrapper {
-    margin: 70px 30px;
+    margin: 0px 30px;
   }
   .footer-logo {
     margin-bottom: 35px;
@@ -305,9 +306,32 @@ footer {
     justify-content: center;
     align-self: center;
     text-align: center;
+    padding-top: 40px;
   }  
   i {
+    color: $white;
     padding: 0px 7.5px; 
+  }
+  article a {
+    color: $white;
+    text-decoration: none;
+  }
+  article a:hover {
+    text-decoration: underline;
+  }
+  .invite {
+    margin: 30px 0px;
+  }
+  .attribution {
+    font-size: .75rem;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $lime-green;
+      text-decoration: underline;
+    }
   }
 }
  

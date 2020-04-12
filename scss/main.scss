@@ -99,6 +99,7 @@ textarea {
 $body-font: 'Public Sans', sans-serif;
 $light: 300;
 $regular: 400;
+$bold: 700;
 
 $dark-blue: hsl(233, 26%, 24%);
 $lime-green: hsl(136, 65%, 51%);
@@ -125,6 +126,17 @@ h1 {
 
 p {
   color: $gray-blue;
+  line-height: 1.75rem;
+}
+
+.request-invite {
+  background: linear-gradient(to right, $lime-green, $bright-cyan);
+  border-radius: 35px;
+  color: $white;
+  font-weight: $bold;
+  letter-spacing: 1px;
+  padding: 20px 35px;
+  text-decoration: none;
 }
 
 /* Navigation */
@@ -176,7 +188,8 @@ p {
 #hero .content-wrapper {
   position: relative;
   background: url('../img/bg-intro-mobile.svg') no-repeat;
-  background-position: bottom 250px right;
+  background-color: $light-gray;
+  background-position: bottom 350px right;
   background-size: 100%;
   z-index: -2;
 }
@@ -186,7 +199,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 30px;
+  margin: 0px 30px;
+  padding-bottom: 90px;
   img {
     z-index: -1;
     margin-top: -155px;
@@ -196,7 +210,8 @@ p {
     margin-top: 0px;
     text-align: center;
   }
-}
+  }
+
 
 /* About */
 
@@ -214,6 +229,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px 30px;
+  
   }
   img {
     padding-bottom: 10px;

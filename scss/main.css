@@ -90,7 +90,17 @@ h1 {
   text-align: center; }
 
 p {
-  color: #9698a6; }
+  color: #9698a6;
+  line-height: 1.75rem; }
+
+.request-invite {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 35px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 20px 35px;
+  text-decoration: none; }
 
 /* Navigation */
 .logo {
@@ -133,7 +143,8 @@ p {
 #hero .content-wrapper {
   position: relative;
   background: url("../img/bg-intro-mobile.svg") no-repeat;
-  background-position: bottom 250px right;
+  background-color: #fafafa;
+  background-position: bottom 350px right;
   background-size: 100%;
   z-index: -2; }
 
@@ -142,7 +153,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 30px; }
+  margin: 0px 30px;
+  padding-bottom: 90px; }
   #hero .hero-content img {
     z-index: -1;
     margin-top: -155px;
@@ -162,7 +174,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0px 30px; }
 #about .about-content img {
   padding-bottom: 10px; }
 

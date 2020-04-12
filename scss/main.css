@@ -167,8 +167,26 @@ p {
   padding-bottom: 10px; }
 
 /* Blog */
-#blog img {
-  width: 20%; }
+#blog .content-wrapper {
+  margin: 70px 30px; }
+  #blog .content-wrapper img {
+    width: 100%;
+    padding-bottom: 20px; }
+  #blog .content-wrapper p {
+    text-align: left;
+    margin-bottom: 70px; }
+  #blog .content-wrapper .blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #blog .content-wrapper article p {
+    padding: 0px 40px; }
+  #blog .content-wrapper h3 {
+    line-height: 1rem;
+    padding: 0px 40px; }
+  #blog .content-wrapper h4 {
+    padding: 0px 40px; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {

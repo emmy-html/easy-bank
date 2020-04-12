@@ -222,8 +222,33 @@ p {
 
 /* Blog */
 
-#blog img {
-  width: 20%;
+#blog .content-wrapper {
+  margin: 70px 30px;
+  img {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  p {
+    text-align: left;
+    margin-bottom: 70px;
+  }
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article p {
+    padding: 0px 40px; 
+  }
+  
+  h3 {
+    line-height: 1rem;
+    padding: 0px 40px;
+  }
+  h4 {
+    padding: 0px 40px;
+  }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

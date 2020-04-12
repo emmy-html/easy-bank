@@ -92,6 +92,14 @@ h1 {
 h2 {
   font-weight: 300; }
 
+h3 {
+  font-weight: 400; }
+
+h4 {
+  color: #9698a6;
+  font-size: .75rem;
+  font-weight: 300; }
+
 p {
   color: #9698a6;
   line-height: 1.75rem; }
@@ -193,14 +201,15 @@ p {
     width: 100%;
     padding-bottom: 20px; }
   #blog .content-wrapper p {
-    text-align: left;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    text-align: left; }
   #blog .content-wrapper .blog-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   #blog .content-wrapper article p {
+    line-height: 1.50rem;
     padding: 0px 40px; }
   #blog .content-wrapper h1 {
     padding-bottom: 40px; }

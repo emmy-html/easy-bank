@@ -241,9 +241,11 @@ p {
   article p {
     padding: 0px 40px; 
   }
-  
+  h1 {
+    padding-bottom: 40px;
+  }
   h3 {
-    line-height: 1rem;
+    line-height: 1.50rem;
     padding: 0px 40px;
   }
   h4 {
@@ -251,6 +253,27 @@ p {
   }
 }
 
+/* Footer */
+
+footer { 
+  .content-wrapper {
+    margin: 70px 30px;
+  }
+  .footer-logo {
+    margin-bottom: 35px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+  }  
+  i {
+    padding: 0px 7.5px; 
+  }
+}
+ 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a {

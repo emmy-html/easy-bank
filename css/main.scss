@@ -281,10 +281,6 @@ p {
   }
 }
 
-#about h2 {
-  text-align: center;
-}
-
 #about .about-content {
   article {
   display: flex;
@@ -292,7 +288,6 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0px 30px;
-  
   }
   img {
     padding-bottom: 10px;
@@ -383,9 +378,14 @@ footer {
 
 @media screen and (min-width: 768px) {
   /* Navigation */
+  .logo {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
   .topnav {
+    margin: 0 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     a {
       color: $gray-blue;
@@ -417,27 +417,70 @@ footer {
     letter-spacing: 1px;
     text-decoration: none;
   }
+  
+  /* Hero Section */
 
   #hero .content-wrapper {
     background: url('../img/bg-intro-desktop.svg') no-repeat;
-    background-position: bottom -100px left 600px;
-    background-size: 100%;
+    background-position: top -350px left 600px;
+    background-size: 110%;
+    padding: 0px 120px;
     .hero-content {
       flex-direction: row-reverse;
-      justify-content: space-around;
+      justify-content: space-between;
       text-align: left;
     }
     article {
-      width: 35%;
+      width: 40%;
     }
    img {
-      width: 125%;
+      width: 120%;
       margin-top: -30px;
     }
+    h1 {
+      text-align: left;
+      line-height: 3.5rem;
+    }
   }
+  #about {
+      .content-wrapper { 
+        text-align: left;
+      }
 
-  #hero h1 {
-    text-align: left;
+      .about-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 0 120px;
+        width: 50%;
+        article {
+          justify-content: space-around;
+          align-items: flex-start;
+          h1 {
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+      }
+
+    .about-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+      margin: 0 80px;
+      article {
+        align-items: flex-start;
+        width: 28%;
+        p {
+          text-align: left;
+        }
+      }
+    }
   }
 
 }

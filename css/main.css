@@ -300,8 +300,41 @@ footer {
     footer .attribution a:hover {
       color: #31d35c; }
 
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  /* Navigation */
+  .topnav {
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between; }
+
+  .topnav a {
+    padding-right: 5px; }
+
+  /* Hero */
+  #hero .hero-content img {
+    width: 60%; }
+
+  #hero .content-wrapper {
+    position: relative;
+    background: url("../img/bg-intro-mobile.svg") no-repeat;
+    background-color: #fafafa;
+    background-position: right 0px top -120px;
+    background-size: 65%;
+    z-index: -2; }
+
+  #hero .hero-content {
+    margin: 0 60px; }
+
+  /* About */
+  #about .content-wrapper {
+    margin: 0 60px; }
+
+  /* Blog */
+  #blog .content-wrapper {
+    margin: 0 60px; } }
 /* Desktop Styles */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   /* Navigation */
   .logo {
     margin-top: 20px;

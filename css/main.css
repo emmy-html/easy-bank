@@ -122,6 +122,9 @@ p {
   text-decoration: none; }
 
 /* Navigation */
+header {
+  background-color: white; }
+
 .logo {
   margin-left: 15px;
   margin-top: 20px;

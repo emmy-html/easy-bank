@@ -195,6 +195,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 0px 30px;
   padding-bottom: 90px; }
   #hero .hero-content img {
@@ -202,8 +203,7 @@ p {
     margin-top: -155px;
     width: 100%; }
   #hero .hero-content p {
-    margin-top: 0px;
-    text-align: center; }
+    margin-top: 0px; }
 
 /* About */
 #about {
@@ -288,7 +288,7 @@ footer {
       text-decoration: underline; }
 
 /* Desktop Styles */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
   /* Navigation */
   .topnav {
     display: flex;
@@ -318,7 +318,24 @@ footer {
     font-size: 14px;
     margin-top: 6px;
     letter-spacing: 1px;
-    text-decoration: none; } }
+    text-decoration: none; }
+
+  #hero .content-wrapper {
+    background: url("../img/bg-intro-desktop.svg") no-repeat;
+    background-position: bottom -100px left 600px;
+    background-size: 100%; }
+    #hero .content-wrapper .hero-content {
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      text-align: left; }
+    #hero .content-wrapper article {
+      width: 35%; }
+    #hero .content-wrapper img {
+      width: 125%;
+      margin-top: -30px; }
+
+  #hero h1 {
+    text-align: left; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

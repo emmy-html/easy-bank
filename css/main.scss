@@ -253,6 +253,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 0px 30px;
   padding-bottom: 90px;
   img {
@@ -262,7 +263,6 @@ p {
   }
   p {
     margin-top: 0px;
-    text-align: center;
   }
 }
 
@@ -381,7 +381,7 @@ footer {
 
 /* Desktop Styles */
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
   /* Navigation */
   .topnav {
     display: flex;
@@ -417,6 +417,29 @@ footer {
     letter-spacing: 1px;
     text-decoration: none;
   }
+
+  #hero .content-wrapper {
+    background: url('../img/bg-intro-desktop.svg') no-repeat;
+    background-position: bottom -100px left 600px;
+    background-size: 100%;
+    .hero-content {
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      text-align: left;
+    }
+    article {
+      width: 35%;
+    }
+   img {
+      width: 125%;
+      margin-top: -30px;
+    }
+  }
+
+  #hero h1 {
+    text-align: left;
+  }
+
 }
 
 

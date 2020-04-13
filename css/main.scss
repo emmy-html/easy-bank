@@ -174,12 +174,16 @@ p {
 /* Style the links inside the navigation bar */
 .topnav a {
   background-color: $white;
+  color: $dark-blue;
   display: block;
   float: left;
   font-weight: $light;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  a:visited {
+    color: $dark-blue;
+  }
 }
 
 .topnav .icon {
@@ -383,12 +387,25 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    a {
+      color: $gray-blue;
+    }
     a:hover {
+      color: $dark-blue;
       text-decoration: none;
     }
+    a:visited {
+      color: $gray-blue;
+    }
   }
-  .request-invite-desktop {
+
+  /* Request Invite Button */
+  .topnav .request-invite-desktop {
     display: inline-block;
+  }
+  .topnav .request-invite-desktop a:hover {
+    color: $white;
+    text-decoration: none;
   }
   .topnav .request-invite-desktop-style {
     background: linear-gradient(to right, $lime-green, $bright-cyan);

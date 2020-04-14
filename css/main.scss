@@ -117,20 +117,27 @@
     font-family: $body-font;
     font-size: 18px;
   }
+
+  h1,
+  h2,
+  h4 {
+    font-weight: $light;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $dark-blue;
+  }
   
   h1 {
     font-size: 3rem;
-    font-weight: $light;
     line-height: 3rem;
     text-align: center;
   }
-  
-  h2 {
-    font-weight: $light;
-  }
-  
+
   h3 {
-    color: $dark-blue;
     font-weight: $regular;
   }
   
@@ -143,9 +150,7 @@
   }
   
   h4 {
-    color: $gray-blue;
     font-size: .75rem;
-    font-weight: $light;
   }
   
   p {
@@ -199,35 +204,32 @@
     }
   }
   
-  .topnav .icon {
-    padding: 0;
-    margin: 14px 16px 0px 14px;
+  .topnav {
+    .icon {
+      display: none;
+      padding: 0;
+      margin: 14px 16px 0px 14px;
   }
-  
-  .topnav i {
-    color: black;
-  }
-  
-  /* Change the style of links on hover */
-  .topnav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  }
-  
+    i {
+      color: black;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+}
+
   /* Additional responsive navigation styles */
    
   @media screen and (max-width: 767px) {
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-    .topnav a {
+    .topnav {
+      a {
       display: none;
-    }
-    .topnav a.icon {
+      }
+      a.icon {
       float: right;
       display: block;
+      }
     }
   }
   
@@ -237,33 +239,33 @@
       position: fixed;
       padding: 0;
       width: 100%;
-    }
-    .topnav.responsive a.icon {
+      a.icon {
       position: absolute;
       right: 0;
       top: 0;
-    }
-    .topnav.responsive a {
+      }
+      a {
       clear: both;
       float: none;
       display: block;
       text-align: center;
+      }
     }
   }
   
   /* Hero */
   
   
-  #hero .content-wrapper {
+  #hero {
+    .content-wrapper {
     position: relative;
     background: url('../img/bg-intro-mobile.svg') no-repeat;
     background-color: $light-gray;
     background-position: right 0px top -120px;
     background-size: 100%;
     z-index: -2;
-  }
-  
-  #hero .hero-content {
+    }
+    .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,32 +282,31 @@
       margin-top: 0px;
     }
   }
+}
   
   /* About */
   
   #about {
     background: $light-gray-blue;
     padding-top: 30px;
-  }
-  
-  #about .content-wrapper {
+    .content-wrapper {
     margin: 70px 30px;
     p {
       text-align: center;
       margin-bottom: 65px;
+      }
     }
-  }
-  
-  #about .about-content {
-    article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 30px;
-    }
-    img {
-      padding-bottom: 10px;
+    .about-content {
+      article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 30px;
+      }
+      img {
+        padding-bottom: 10px;
+      }
     }
   }
   
@@ -314,9 +315,7 @@
   #blog {
     background: $light-gray;
     padding-top: 20px;
-  }
-  
-  #blog .content-wrapper {
+    .content-wrapper {
     img {
       width: 100%;
       padding-bottom: 20px;
@@ -346,6 +345,7 @@
       padding: 0px 40px;
     }
   }
+}
   
   /* Footer */
   
@@ -399,7 +399,7 @@
 
   /* Tablet Styles */
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     /* Navigation */
     .topnav {
       display: flex;
@@ -408,8 +408,10 @@
 
     /* Hero */
 
-    #hero .hero-content {
-      margin: 0px 60px;
+    #hero {
+      .hero-content {
+        margin: 0px 60px;
+      }
     }
 
     /* About */
@@ -496,6 +498,9 @@
         line-height: 3.5rem;
       }
     }
+
+    /* About Section */
+
     #about {
         .content-wrapper { 
           text-align: left;

@@ -301,38 +301,23 @@ footer {
       color: #31d35c; }
 
 /* Tablet Styles */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   /* Navigation */
   .topnav {
-    margin: 0 60px;
     display: flex;
-    justify-content: space-between; }
-
-  .topnav a {
-    padding-right: 5px; }
+    justify-content: space-around; }
 
   /* Hero */
-  #hero .hero-content img {
-    width: 60%; }
-
-  #hero .content-wrapper {
-    position: relative;
-    background: url("../img/bg-intro-mobile.svg") no-repeat;
-    background-color: #fafafa;
-    background-position: right 0px top -120px;
-    background-size: 65%;
-    z-index: -2; }
-
   #hero .hero-content {
-    margin: 0 60px; }
+    margin: 0px 60px; }
 
   /* About */
   #about .content-wrapper {
-    margin: 0 60px; }
+    margin: 0px 60px; }
 
   /* Blog */
   #blog .content-wrapper {
-    margin: 0 60px; } }
+    margin: 0px 60px; } }
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
   /* Navigation */
@@ -345,7 +330,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; }
-    .topnav a {
+    .topnav .regular-nav a {
       color: #9698a6; }
     .topnav a:hover {
       color: #2d314d;
@@ -356,10 +341,11 @@ footer {
   /* Request Invite Button */
   .topnav .request-invite-desktop {
     display: inline-block; }
-
-  .topnav .request-invite-desktop a:hover {
-    color: white;
-    text-decoration: none; }
+    .topnav .request-invite-desktop a:hover {
+      color: white;
+      text-decoration: none; }
+    .topnav .request-invite-desktop a:visited {
+      color: white; }
 
   .topnav .request-invite-desktop-style {
     background: linear-gradient(to right, #31d35c, #2bb7da);

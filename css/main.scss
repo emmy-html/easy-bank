@@ -11,764 +11,756 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* Fonts & Colors */
-
-$body-font: 'Public Sans', sans-serif;
-$light: 300;
-$regular: 400;
-$bold: 700;
-
-$dark-blue: hsl(233, 26%, 24%);
-$lime-green: hsl(136, 65%, 51%);
-$bright-cyan: hsl(192, 70%, 51%);
-
-$gray-blue: hsl(233, 8%, 62%);
-$light-gray-blue: hsl(220, 16%, 96%);
-$light-gray: hsl(0, 0%, 98%);
-$white: hsl(0, 0%, 100%);
-
-/* Main Styles */
-
-body {
-  background: $light-gray;
-  font-family: $body-font;
-  font-size: 18px;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: $light;
-  line-height: 3rem;
-  text-align: center;
-}
-
-h2 {
-  font-weight: $light;
-}
-
-h3 {
-  color: $dark-blue;
-  font-weight: $regular;
-}
-
-a {
-  text-decoration: none;
-}
-
-h3:hover {
-  color: $lime-green;
-}
-
-h4 {
-  color: $gray-blue;
-  font-size: .75rem;
-  font-weight: $light;
-}
-
-p {
-  color: $gray-blue;
-  line-height: 1.75rem;
-}
-
-.request-invite {
-  background: linear-gradient(to right, $lime-green, $bright-cyan);
-  border-radius: 35px;
-  color: $white;
-  font-weight: $bold;
-  letter-spacing: 1px;
-  padding: 20px 35px;
-  text-decoration: none;
-}
-
-/* Navigation */
-header {
-  background-color: $white;
-}
-
-.logo {
-  margin-left: 15px;
-  margin-top: 20px;
-  float: left;
-}
-
-.topnav {
-  position: relative;
-  background-color: $white;
-  height: 60px;
-}
-
-.request-invite-desktop {
-  display: none;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  background-color: $white;
-  color: $dark-blue;
-  display: block;
-  float: left;
-  font-weight: $light;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  a:visited {
-    color: $dark-blue;
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
   }
-}
-
-.topnav .icon {
-  padding: 0;
-  margin: 14px 16px 0px 14px;
-}
-
-.topnav i {
-  color: black;
-}
-
-/* Change the style of links on hover */
-.topnav a:hover {
-  text-decoration: underline;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-/* Additional responsive navigation styles */
- 
-@media screen and (max-width: 767px) {
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  .topnav a {
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* Fonts & Colors */
+  
+  $body-font: 'Public Sans', sans-serif;
+  $light: 300;
+  $regular: 400;
+  $bold: 700;
+  
+  $dark-blue: hsl(233, 26%, 24%);
+  $lime-green: hsl(136, 65%, 51%);
+  $bright-cyan: hsl(192, 70%, 51%);
+  
+  $gray-blue: hsl(233, 8%, 62%);
+  $light-gray-blue: hsl(220, 16%, 96%);
+  $light-gray: hsl(0, 0%, 98%);
+  $white: hsl(0, 0%, 100%);
+  
+  /* Main Styles */
+  
+  body {
+    background: $light-gray;
+    font-family: $body-font;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: $light;
+    line-height: 3rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-weight: $light;
+  }
+  
+  h3 {
+    color: $dark-blue;
+    font-weight: $regular;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h3:hover {
+    color: $lime-green;
+  }
+  
+  h4 {
+    color: $gray-blue;
+    font-size: .75rem;
+    font-weight: $light;
+  }
+  
+  p {
+    color: $gray-blue;
+    line-height: 1.75rem;
+  }
+  
+  .request-invite {
+    background: linear-gradient(to right, $lime-green, $bright-cyan);
+    border-radius: 35px;
+    color: $white;
+    font-weight: $bold;
+    letter-spacing: 1px;
+    padding: 20px 35px;
+    text-decoration: none;
+  }
+  
+  /* Navigation */
+  header {
+    background-color: $white;
+  }
+  
+  .logo {
+    margin-left: 15px;
+    margin-top: 20px;
+    float: left;
+  }
+  
+  .topnav {
+    position: relative;
+    background-color: $white;
+    height: 60px;
+  }
+  
+  .request-invite-desktop {
     display: none;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 767px) {
-  .topnav.responsive {
-    position: fixed;
-    padding: 0;
-    width: 100%;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    clear: both;
-    float: none;
-    display: block;
-    text-align: center;
-  }
-}
-
-/* Hero */
-
-
-#hero .content-wrapper {
-  position: relative;
-  background: url('../img/bg-intro-mobile.svg') no-repeat;
-  background-color: $light-gray;
-  background-position: right 0px top -120px;
-  background-size: 100%;
-  z-index: -2;
-}
-
-#hero .hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0px 30px;
-  padding-bottom: 90px;
-  img {
-    z-index: -1;
-    margin-top: -155px;
-    width: 100%;
-  }
-  p {
-    margin-top: 0px;
-  }
-}
-
-/* About */
-
-#about {
-  background: $light-gray-blue;
-  padding-top: 30px;
-}
-
-#about .content-wrapper {
-  margin: 70px 30px;
-  p {
-    text-align: center;
-    margin-bottom: 65px;
-  }
-}
-
-#about .about-content {
-  article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 30px;
-  }
-  img {
-    padding-bottom: 10px;
-  }
-}
-
-/* Blog */
-
-#blog {
-  background: $light-gray;
-  padding-top: 20px;
-}
-
-#blog .content-wrapper {
-  img {
-    width: 100%;
-    padding-bottom: 20px;
-  }
-  p {
-    margin-bottom: 70px;
-    text-align: left;
-  }
-  .blog-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  article p {
-    line-height: 1.50rem;
-    padding: 0px 40px; 
-  }
-  h1 {
-    padding-bottom: 40px;
-  }
-  h3 {
-    line-height: 1.50rem;
-    padding: 0px 40px;
-  }
-  h4 {
-    padding: 0px 40px;
-  }
-}
-
-/* Footer */
-
-footer { 
-  background: $dark-blue;
-  .content-wrapper {
-    margin: 0px 30px;
-  }
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-    padding-top: 40px;
-  }
-  /* Font Awesome */
-  i {
-    color: $white;
-    padding: 0px 7.5px; 
-  }
-  i:hover {
-    color: $lime-green;
-  }
-  article a {
-    color: $white;
-    text-decoration: none;
-  }
-  article a:hover {
-    color: $lime-green;
-    text-decoration: none;
-  }
-  .invite {
-    padding: 30px 0px;
-    a:hover {
-      color: $white;
-    }
-  }
-  .attribution {
-    padding-top: 30px;
-    font-size: .75rem;
-    a {
-      color: $white;
-      text-decoration: none;
-    }
-    a:hover {
-      color: $lime-green;
-    }
-  }
-}
-
-/* Tablet Styles */
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  /* Navigation */
-  .topnav {
-    margin: 0 60px;
-    display: flex;
-    justify-content: space-between;
-  }
+  
+  /* Style the links inside the navigation bar */
   .topnav a {
-    padding-right: 5px;
-  }
-  /* Hero */
-  #hero .hero-content {
-    img {
-      width: 60%;
+    background-color: $white;
+    color: $dark-blue;
+    display: block;
+    float: left;
+    font-weight: $light;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    a:visited {
+      color: $dark-blue;
     }
   }
+  
+  .topnav .icon {
+    padding: 0;
+    margin: 14px 16px 0px 14px;
+  }
+  
+  .topnav i {
+    color: black;
+  }
+  
+  /* Change the style of links on hover */
+  .topnav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Additional responsive navigation styles */
+   
+  @media screen and (max-width: 767px) {
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    .topnav a {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 767px) {
+    .topnav.responsive {
+      position: fixed;
+      padding: 0;
+      width: 100%;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      clear: both;
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  /* Hero */
+  
+  
   #hero .content-wrapper {
     position: relative;
     background: url('../img/bg-intro-mobile.svg') no-repeat;
     background-color: $light-gray;
     background-position: right 0px top -120px;
-    background-size: 65%;
+    background-size: 100%;
     z-index: -2;
   }
+  
   #hero .hero-content {
-    margin: 0 60px;
-  }
-  /* About */
-  #about .content-wrapper {
-    margin: 0 60px;
-  }
-  /* Blog */
-  #blog .content-wrapper {
-    margin: 0 60px;
-  }
-
-}
-/* Desktop Styles */
-
-@media screen and (min-width: 1200px) {
-  /* Navigation */
-  .logo {
-    margin-top: 20px;
-    margin-left: 30px;
-  }
-  .topnav {
-    margin: 0 120px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    a {
-      color: $gray-blue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 30px;
+    padding-bottom: 90px;
+    img {
+      z-index: -1;
+      margin-top: -155px;
+      width: 100%;
     }
-    a:hover {
-      color: $dark-blue;
-      text-decoration: none;
+    p {
+      margin-top: 0px;
     }
-    a:visited {
-      color: $gray-blue;
-    }
-  }
-
-  /* Request Invite Button */
-  .topnav .request-invite-desktop {
-    display: inline-block;
-  }
-  .topnav .request-invite-desktop a:hover {
-    color: $white;
-    text-decoration: none;
-  }
-  .topnav .request-invite-desktop-style {
-    background: linear-gradient(to right, $lime-green, $bright-cyan);
-    border-radius: 35px;
-    color: $white;
-    font-weight: $bold;
-    font-size: 14px;
-    margin-top: 6px;
-    letter-spacing: 1px;
-    text-decoration: none;
   }
   
-  /* Hero Section */
-
-  #hero .content-wrapper {
-    background: url('../img/bg-intro-desktop.svg') no-repeat;
-    background-position: top -350px left 600px;
-    background-size: 110%;
-    padding: 0px 120px;
-    .hero-content {
-      flex-direction: row-reverse;
-      justify-content: space-between;
+  /* About */
+  
+  #about {
+    background: $light-gray-blue;
+    padding-top: 30px;
+  }
+  
+  #about .content-wrapper {
+    margin: 70px 30px;
+    p {
+      text-align: center;
+      margin-bottom: 65px;
+    }
+  }
+  
+  #about .about-content {
+    article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    }
+    img {
+      padding-bottom: 10px;
+    }
+  }
+  
+  /* Blog */
+  
+  #blog {
+    background: $light-gray;
+    padding-top: 20px;
+  }
+  
+  #blog .content-wrapper {
+    img {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    p {
+      margin-bottom: 70px;
       text-align: left;
     }
-    article {
-      width: 40%;
+    .blog-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-   img {
-      width: 120%;
-      margin-top: -30px;
+    article p {
+      line-height: 1.50rem;
+      padding: 0px 40px; 
     }
     h1 {
-      text-align: left;
-      line-height: 3.5rem;
+      padding-bottom: 40px;
+    }
+    h3 {
+      line-height: 1.50rem;
+      padding: 0px 40px;
+    }
+    h4 {
+      padding: 0px 40px;
     }
   }
-  #about {
-      .content-wrapper { 
-        text-align: left;
-      }
-
-      .about-intro {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        margin: 0 120px;
-        width: 50%;
-        article {
-          justify-content: space-around;
-          align-items: flex-start;
-          h1 {
-            text-align: left;
-          }
-          p {
-            text-align: left;
-          }
-        }
-      }
-
-    .about-content {
+  
+  /* Footer */
+  
+  footer { 
+    background: $dark-blue;
+    .content-wrapper {
+      margin: 0px 30px;
+    }
+    .footer-content {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      text-align: left;
-      margin: 0 80px;
-      article {
-        align-items: flex-start;
-        width: 28%;
-        p {
-          text-align: left;
-        }
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      padding-top: 40px;
+    }
+    /* Font Awesome */
+    i {
+      color: $white;
+      padding: 0px 7.5px; 
+    }
+    i:hover {
+      color: $lime-green;
+    }
+    article a {
+      color: $white;
+      text-decoration: none;
+    }
+    article a:hover {
+      color: $lime-green;
+      text-decoration: none;
+    }
+    .invite {
+      padding: 30px 0px;
+      a:hover {
+        color: $white;
+      }
+    }
+    .attribution {
+      padding-top: 30px;
+      font-size: .75rem;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $lime-green;
       }
     }
   }
+
+  /* Tablet Styles */
+
+  @media screen and (min-width: 768px) {
+    /* Navigation */
+    .topnav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* Hero */
+
+    #hero .hero-content {
+      margin: 0px 60px;
+    }
+
+    /* About */
+
+    #about .content-wrapper {
+      margin: 0px 60px;
+    }
 
     /* Blog */
+    #blog .content-wrapper {
+      margin: 0px 60px;
+    }
+  }
+  
+  /* Desktop Styles */
+  
+  @media screen and (min-width: 1200px) {
+    /* Navigation */
+    .logo {
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+    .topnav {
+      margin: 0 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .regular-nav a {
+        color: $gray-blue;
+      }
+      a:hover {
+        color: $dark-blue;
+        text-decoration: none;
+      }
+      a:visited {
+        color: $gray-blue;
+      }
+    }
+  
+    /* Request Invite Button */
+    .topnav .request-invite-desktop {
+      display: inline-block;
+      a:hover {
+        color: $white;
+        text-decoration: none;
+      }
+      a:visited {
+        color: $white;
+      }
+    }
 
-    #blog {
-      .content-wrapper {
-        margin: 0px 120px;
-        padding-bottom: 80px;
-      h1 {
+    .topnav .request-invite-desktop-style {
+      background: linear-gradient(to right, $lime-green, $bright-cyan);
+      border-radius: 35px;
+      color: $white;
+      font-weight: $bold;
+      font-size: 14px;
+      margin-top: 6px;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    
+    /* Hero Section */
+  
+    #hero .content-wrapper {
+      background: url('../img/bg-intro-desktop.svg') no-repeat;
+      background-position: top -350px left 600px;
+      background-size: 110%;
+      padding: 0px 120px;
+      .hero-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
         text-align: left;
       }
-      .blog-content {
+      article {
+        width: 40%;
+      }
+     img {
+        width: 120%;
+        margin-top: -30px;
+      }
+      h1 {
+        text-align: left;
+        line-height: 3.5rem;
+      }
+    }
+    #about {
+        .content-wrapper { 
+          text-align: left;
+        }
+  
+        .about-intro {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+          margin: 0 120px;
+          width: 50%;
+          article {
+            justify-content: space-around;
+            align-items: flex-start;
+            h1 {
+              text-align: left;
+            }
+            p {
+              text-align: left;
+            }
+          }
+        }
+  
+      .about-content {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
         flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        margin: 0 80px;
         article {
-          background-color: $white;
-          width: 25%;
-          height: 475px;
-          margin-right: 30px;
-          img {
-            border-radius: 10px 10px 0px 0px;
-            width: 95%;
-          }
-          h3 {
-            padding: 0 20px;
-          }
-          h4 {
-            padding: 0 20px;
-          }
+          align-items: flex-start;
+          width: 28%;
           p {
-            font-size: .95rem;
-            line-height: 1.25rem;
             text-align: left;
-            padding: 0 20px;
           }
         }
       }
     }
-  }
-
-  /* Footer */
-
-  footer {
-    padding-bottom: 60px;
-    .footer-content {
-      margin: 0 120px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      article {
-        width: 30%;
-      }
-      .attribution {
-        padding-top: 15px;
+  
+      /* Blog */
+  
+      #blog {
+        .content-wrapper {
+          margin: 0px 120px;
+          padding-bottom: 80px;
+        h1 {
+          text-align: left;
+        }
+        .blog-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-direction: row;
+          article {
+            background-color: $white;
+            width: 25%;
+            height: 475px;
+            margin-right: 30px;
+            img {
+              border-radius: 10px 10px 0px 0px;
+              width: 95%;
+            }
+            h3 {
+              padding: 0 20px;
+            }
+            h4 {
+              padding: 0 20px;
+            }
+            p {
+              font-size: .95rem;
+              line-height: 1.25rem;
+              text-align: left;
+              padding: 0 20px;
+            }
+          }
+        }
       }
     }
+  
+    /* Footer */
+  
+    footer {
+      padding-bottom: 60px;
+      .footer-content {
+        margin: 0 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        article {
+          width: 30%;
+        }
+        .attribution {
+          padding-top: 15px;
+        }
+      }
+    }
+  
+  
   }
-}
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+  
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
+   * Hide visually and from screen readers
+   */
+  
+  .hidden {
+    display: none !important;
   }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+  
   /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
   }
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
   }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+  
+  .invisible {
+    visibility: hidden;
   }
-  h2,
-  h3 {
-    page-break-after: avoid;
+  
+  /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
   }
-}
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }

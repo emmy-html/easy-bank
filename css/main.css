@@ -301,6 +301,11 @@ footer {
   /* Hero */
   #hero .hero-content {
     margin: 0px 60px; }
+  #hero .content-wrapper {
+    background: url("../img/bg-intro-desktop.svg") no-repeat;
+    background-position: top -250px left 200px;
+    background-size: 100%;
+    padding: 0px 120px; }
 
   /* About */
   #about .content-wrapper {

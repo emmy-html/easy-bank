@@ -328,11 +328,11 @@ footer {
     align-items: flex-start; }
     .topnav .regular-nav a {
       color: #9698a6; }
+    .topnav a:visited {
+      color: #9698a6; }
     .topnav a:hover {
       color: #2d314d;
       text-decoration: none; }
-    .topnav a:visited {
-      color: #9698a6; }
 
   /* Request Invite Button */
   .topnav .request-invite-desktop {

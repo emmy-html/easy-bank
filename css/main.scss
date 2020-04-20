@@ -16,7 +16,7 @@
     font-size: 1em;
     line-height: 1.4;
   }
-  
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -26,21 +26,21 @@
    *
    * Customize the background color to match your design.
    */
-  
+
   ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   ::selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   /*
    * A better looking default horizontal rule
    */
-  
+
   hr {
     display: block;
     height: 1px;
@@ -49,13 +49,13 @@
     margin: 1em 0;
     padding: 0;
   }
-  
+
   /*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
+
   audio,
   canvas,
   iframe,
@@ -64,54 +64,54 @@
   video {
     vertical-align: middle;
   }
-  
+
   /*
    * Remove default fieldset styles.
    */
-  
+
   fieldset {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
+
   /*
    * Allow only vertical resizing of textareas.
    */
-  
+
   textarea {
     resize: vertical;
   }
-  
+
   /* ==========================================================================
      Browser Upgrade Prompt
      ========================================================================== */
-  
+
   .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
   }
-  
+
   /* Fonts & Colors */
-  
+
   $body-font: 'Public Sans', sans-serif;
   $light: 300;
   $regular: 400;
   $bold: 700;
-  
+
   $dark-blue: hsl(233, 26%, 24%);
   $lime-green: hsl(136, 65%, 51%);
   $bright-cyan: hsl(192, 70%, 51%);
-  
+
   $gray-blue: hsl(233, 8%, 62%);
   $light-gray-blue: hsl(220, 16%, 96%);
   $light-gray: hsl(0, 0%, 98%);
   $white: hsl(0, 0%, 100%);
-  
+
   /* Main Styles */
-  
+
   body {
     background: $light-gray;
     font-family: $body-font;
@@ -130,7 +130,7 @@
   h4 {
     color: $dark-blue;
   }
-  
+
   h1 {
     font-size: 3rem;
     line-height: 3rem;
@@ -140,24 +140,24 @@
   h3 {
     font-weight: $regular;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   h3:hover {
     color: $lime-green;
   }
-  
+
   h4 {
     font-size: .75rem;
   }
-  
+
   p {
     color: $gray-blue;
     line-height: 1.75rem;
   }
-  
+
   .request-invite {
     background: linear-gradient(to right, $lime-green, $bright-cyan);
     border-radius: 35px;
@@ -167,28 +167,28 @@
     padding: 20px 35px;
     text-decoration: none;
   }
-  
+
   /* Navigation */
   header {
     background-color: $white;
   }
-  
+
   .logo {
     margin-left: 15px;
     margin-top: 20px;
     float: left;
   }
-  
+
   .topnav {
     position: relative;
     background-color: $white;
     height: 60px;
   }
-  
+
   .request-invite-desktop {
     display: none;
   }
-  
+
   /* Style the links inside the navigation bar */
   .topnav a {
     background-color: $white;
@@ -203,7 +203,7 @@
       color: $dark-blue;
     }
   }
-  
+
   .topnav {
     .icon {
       display: none;
@@ -219,7 +219,7 @@
 }
 
   /* Additional responsive navigation styles */
-   
+
   @media screen and (max-width: 767px) {
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     .topnav {
@@ -232,7 +232,7 @@
       }
     }
   }
-  
+
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 767px) {
     .topnav.responsive {
@@ -252,10 +252,10 @@
       }
     }
   }
-  
+
   /* Hero */
-  
-  
+
+
   #hero {
     .content-wrapper {
     position: relative;
@@ -283,9 +283,9 @@
     }
   }
 }
-  
+
   /* About */
-  
+
   #about {
     background: $light-gray-blue;
     padding-top: 30px;
@@ -309,9 +309,9 @@
       }
     }
   }
-  
+
   /* Blog */
-  
+
   #blog {
     background: $light-gray;
     padding-top: 20px;
@@ -332,7 +332,7 @@
     }
     article p {
       line-height: 1.50rem;
-      padding: 0px 40px; 
+      padding: 0px 40px;
     }
     h1 {
       padding-bottom: 40px;
@@ -346,10 +346,10 @@
     }
   }
 }
-  
+
   /* Footer */
-  
-  footer { 
+
+  footer {
     background: $dark-blue;
     .content-wrapper {
       margin: 0px 30px;
@@ -365,7 +365,7 @@
     /* Font Awesome */
     i {
       color: $white;
-      padding: 0px 7.5px; 
+      padding: 0px 7.5px;
     }
     i:hover {
       color: $lime-green;
@@ -431,9 +431,9 @@
       margin: 0px 60px;
     }
   }
-  
+
   /* Desktop Styles */
-  
+
   @media screen and (min-width: 1200px) {
     /* Navigation */
     .logo {
@@ -448,15 +448,15 @@
       .regular-nav a {
         color: $gray-blue;
       }
+      a:visited {
+        color: $gray-blue;
+      }
       a:hover {
         color: $dark-blue;
         text-decoration: none;
       }
-      a:visited {
-        color: $gray-blue;
-      }
     }
-  
+
     /* Request Invite Button */
     .topnav .request-invite-desktop {
       display: inline-block;
@@ -479,9 +479,9 @@
       letter-spacing: 1px;
       text-decoration: none;
     }
-    
+
     /* Hero Section */
-  
+
     #hero .content-wrapper {
       background: url('../img/bg-intro-desktop.svg') no-repeat;
       background-position: top -350px left 600px;
@@ -508,10 +508,10 @@
     /* About Section */
 
     #about {
-        .content-wrapper { 
+        .content-wrapper {
           text-align: left;
         }
-  
+
         .about-intro {
           display: flex;
           flex-direction: column;
@@ -530,7 +530,7 @@
             }
           }
         }
-  
+
       .about-content {
         display: flex;
         flex-direction: row;
@@ -547,9 +547,9 @@
         }
       }
     }
-  
+
       /* Blog */
-  
+
       #blog {
         .content-wrapper {
           margin: 0px 120px;
@@ -587,9 +587,9 @@
         }
       }
     }
-  
+
     /* Footer */
-  
+
     footer {
       padding-bottom: 60px;
       .footer-content {
@@ -606,23 +606,23 @@
         }
       }
     }
-  
-  
+
+
   }
-  
-  
+
+
   /* ==========================================================================
      Helper classes
      ========================================================================== */
-  
+
   /*
    * Hide visually and from screen readers
    */
-  
+
   .hidden {
     display: none !important;
   }
-  
+
   /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -631,7 +631,7 @@
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
-  
+
   .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -644,13 +644,13 @@
     width: 1px;
     /* 1 */
   }
-  
+
   /*
   * Extends the .sr-only class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
-  
+
   .sr-only.focusable:active,
   .sr-only.focusable:focus {
     clip: auto;
@@ -661,15 +661,15 @@
     white-space: inherit;
     width: auto;
   }
-  
+
   /*
   * Hide visually and from screen readers, but maintain layout
   */
-  
+
   .invisible {
     visibility: hidden;
   }
-  
+
   /*
   * Clearfix: contain floats
   *
@@ -681,7 +681,7 @@
   * 2. The use of `table` rather than `block` is only necessary if using
   *    `:before` to contain the top-margins of child elements.
   */
-  
+
   .clearfix:before,
   .clearfix:after {
     content: " ";
@@ -689,34 +689,34 @@
     display: table;
     /* 2 */
   }
-  
+
   .clearfix:after {
     clear: both;
   }
-  
+
   /* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
-  
+
   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
   }
-  
+
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
     (min-resolution: 1.25dppx),
     (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
   }
-  
+
   /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
-  
+
   @media print {
     *,
     *:before,
